@@ -1,0 +1,225 @@
+footer {
+    background-color: #396AFF;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%; 
+}
+
+.amira-footer-content {
+    display: grid;
+    grid-template-columns: repeat(1fr .5fr 1fr);
+    gap: 40px;
+    padding: 20px;
+    text-align: left;
+     
+   
+}
+
+.amira-footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left; 
+    margin: 0 auto;
+}
+.amira-footer-section.about{
+    padding: 5px;
+    
+}
+
+.amira-footer-section.about p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+.amira-footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.amira-footer-section.links ul li {
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+.amira-footer-section.links ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: left; 
+    text-decoration: none; 
+    position: relative; 
+    padding-bottom: 5px; 
+}
+
+.amira-footer-section.links ul li a::after {
+    content: ''; 
+    position: absolute; 
+    width: 0; 
+    height: 2px; 
+    bottom: 0; 
+    left: 0; 
+    background-color: white;
+}
+
+.amira-footer-section.links ul li a:hover::after {
+    width: 100%; 
+}
+
+
+.amira-logo-img {
+    max-width: 100%;
+    height: 75px;
+    display: block;
+    margin: 25 0 0px auto; 
+   
+  
+}
+
+.amira-footer-section h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.amira-footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.amira-footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.amira-footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.amira-footer-section p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+   
+}
+
+.amira-footer-section .amira-socials {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+
+
+
+
+.amira-footer-section .icon {
+    width: 14px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    
+}
+
+.amira-footer-bottom {
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .amira-footer-content {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        height: 790px;
+        gap: 1px;
+        width: 150px;
+        
+        
+    }
+
+    .amira-footer-section {
+        max-width: 100%;
+        margin: 0 auto;
+        gap: 6px;
+       
+    }
+    .amira-footer-section.about {
+        margin-left: 2px;
+        margin-top: 2px;
+            margin-inline-start: 0
+    }
+    .amira-footer-section.links {
+        margin-left: 5px;
+        
+        }
+        .amira-footer-section.about p{
+          
+          width: 300px;
+            
+        }
+}
+
+@media (min-width: 768px) {
+    .amira-footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: flex-start;
+        padding: 30px;
+        height: 320px;
+    }
+
+    .amira-footer-section {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .amira-logo-img {
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+}
+.amira-socials .flex {
+    display: flex;
+}
+.amira-socials.space-x-4   {
+    margin-right: 1rem;
+}
+.amira-socials.border-t {
+    border-top: 1px solid;
+}
+.amira-socials.border-gray-300 {
+    border-color: #D1D5DB;
+}
+.amira-socials.pt-4 {
+    padding-top: 1rem;
+}
+.amira-socials.mt-8 {
+    margin-top: 2rem;
+}
+.amira-social {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.amira-social:hover {
+    background-color: #f0f0f0;
+    color: #396AFF;
+}
+.amira-social svg {
+    width: 22px;
+    height: 22px;
+}
+.amira-social.youtube svg {
+    width: 18px;
+    height: 18px;
+}

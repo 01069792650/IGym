@@ -1,0 +1,238 @@
+.amira-socials .flex {
+    display: flex;
+}
+.amira-socials.space-x-4   {
+    margin-right: 1rem;
+}
+.amira-socials.border-t {
+    border-top: 1px solid;
+}
+.amira-socials.border-gray-300 {
+    border-color: #D1D5DB;
+}
+.amira-socials.pt-4 {
+    padding-top: 1rem;
+}
+.amira-socials.mt-8 {
+    margin-top: 2rem;
+}
+.amira-social {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.amira-social:hover {
+    background-color: #f0f0f0;
+    color: #396AFF;
+}
+.amira-social svg {
+    width: 24px;
+    height: 24px;
+}
+.amira-social.youtube svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.amira-contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 100%;
+    margin: 50px auto;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+
+
+.amira-contact-form, .amira-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.amira-contact-form {
+    width: 720px;
+    max-width: 750px;
+    margin-left: 20px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 0px;
+   
+    
+}
+
+.amira-contact-info {
+   
+    background-color: #396AFF;
+    color: white;
+    width: 700px;
+    height: 390px;
+    gap: 0px;
+    border-radius: 24px 24px 24px 24px;
+   
+    
+}
+
+.amira-contact-form h1 {
+    color: #052963;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+   
+}
+
+.amira-contact-info h2 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.amira-contact-form p {
+    color: #b8b8b8;
+    margin-top: 0;
+    
+}
+
+.amira-contact-form input, .amira-contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    outline: none;
+    height: 60px;
+   
+}
+
+.amira-contact-form button {
+    width: calc(100% - 10px);
+    padding: 10px;
+    background-color: #396AFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 35px;
+}
+
+.amira-contact-form button:hover {
+    background-color: #03357f;
+}
+
+.amira-contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.amira-contact-info .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.amira-contact-info hr {
+    border: none; 
+    border-top: 2px solid #ffffff; 
+    margin: 20px 0;
+    width: 100%;
+    max-width: 100%; 
+}
+
+.amira-socials {
+    display: flex;
+    gap: 10px;
+}
+
+
+    
+
+.amira-socials a img:hover{
+    background-color: white;
+    color: #396AFF; 
+    border-radius: 50%;
+}
+
+
+    @media (max-width: 768px) {
+        .amira-contact-section {
+            grid-template-columns: 1fr;
+            padding: 1px;
+            margin-top: 0;
+           
+            
+            
+           
+        }
+        .amira-contact-form {
+            max-width: none;
+    
+        }
+        
+    
+        .amira-contact-info {
+            max-width: none;
+           
+        }
+        .amira-contact-info hr{
+            max-width: none;
+        }
+        .amira-contact-info hr{
+            margin: 10px 0; 
+            width: 80%;
+            margin-left: 20px;
+        }
+        .amira-contact-form h1{
+            font-size: 2rem;
+        }
+         .amira-contact-form, .amira-contact-info {
+                margin: 40px auto;
+                padding: 9px;
+                max-width: 300px;
+                margin-bottom: -30px;
+            }
+            .amira-contact-info{
+               
+                    margin: 20px auto;
+                    padding: 15px;
+                    height: 400px;
+                    text-align: center;
+                    justify-items: center;
+                    max-width: 280px;
+                margin-bottom: -10px;}
+                   
+        }
+    @media(min-width:768px){
+        .amira-contact-form{
+            height: 400px;
+            margin-top: 145px;
+
+        }
+        .amira-contact-section{
+            margin-top: 0 auto;
+        }
+        .amira-contact-form h1{
+          font-size: 60px;
+        }
+       
+        .amira-contact-info{
+            margin-top: 200px;
+            width: 650px;
+            
+        }
+
+    }
